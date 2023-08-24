@@ -1,0 +1,1515 @@
+<!--temple-in-pray-model4 v0.10(c)-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prayer farm</title>
+  <style>
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9e9e9;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #e9e9e9;
+  border-top-color: navy;
+  border-radius: 50%;
+  animation: loading 1.25s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(2turn);
+  }
+}
+    </style>
+
+    <script>
+ window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+  loader.addEventListener("transitionend", () => {
+    loader.parentNode.removeChild(loader);
+  });
+
+});
+
+
+    </script>
+  </head>
+
+  <header>
+    <div class="loader"></div>       
+    <div class="menu-bar">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+      <h1 class="logo" style="font-family: 'Caveat', cursive;">Temple<span> in pray</span></h1>
+      <div class="th">
+      <ul>
+        <li class="th-item"><b href="http://temple-in-pray.com" style="font-family: 'Darumadrop One', cursive;">Home</b></li>
+        <li class="th-item"><b href="" style="font-family: 'Darumadrop One', cursive;">Central <i class="fas fa-caret-down"></i></b>
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="http://temple-in-pray.com/about" style="font-family: 'Merienda', cursive;">About</a></li>
+                  <li><a href="http://temple-in-pray.com/chatbox" style="font-family: 'Merienda', cursive;">ChatBOX</a></li>
+                  <li><a href="http://temple-in-pray.com/blog" style="font-family: 'Merienda', cursive;">Blog</a></li>
+                  <li>
+                    <a href="#" style="font-family: 'Merienda', cursive;">Language<i class="fas fa-caret-right"></i></a>
+                    
+                    <div class="dropdown-menu-1">
+                      <ul>
+                        <li><a href="http://temple-in-pray.com" style="font-family: 'Merienda', cursive;">English</a></li>
+                        <li><a href="#" style="font-family: 'Merienda', cursive;">Support English only</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="http://temple-in-pray.com/community-mailbox" style="font-family: 'Merienda', cursive;">Public MailBox</a></li>
+                  <li><a href="http://temple-in-pray.com/FAQ" style="font-family: 'Merienda', cursive;">FAQ</a></li>
+                </ul>
+              </div>
+        </li>
+        <li class="th-item"><b href="#" style="font-family: 'Darumadrop One', cursive;">Tools <i class="fas fa-caret-down"><b></i>
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="http://temple-in-pray.com/prayer-farm" style="font-family: 'Merienda', cursive;">Prayer Farm</a></li>
+                  <li><a href="http://temple-in-pray.com/daily-luckdraw" style="font-family: 'Merienda', cursive;">Daily Luckydraw</a></li>
+                  <li><a href="http://temple-in-pray.com/archery-field" style="font-family: 'Merienda', cursive;">Archery Field</a></li>
+                  <li><a href="http://temple-in-pray.com/daily-stamp" style="font-family: 'Merienda', cursive;">Daily Stamp</a></li>
+                  <li><a href="http://temple-in-pray.com/bookshelf" style="font-family: 'Merienda', cursive;">BOOKself</a></li>
+                </ul>
+          </div>
+        </li>
+        <li class="th-item"><b href="http://temple-in-pray.com/contact" style="font-family: 'Darumadrop One', cursive;">Contact</b></li>
+      </ul>
+    </div>
+      <div class="menuToggle">
+          <span class="mt1"></span>
+          <span class="mt2"></span>
+          <span class="mt3"></span>
+      </div>
+
+      
+  </div>
+
+</div>
+</div>
+</div>  
+
+</header>
+
+
+  <div class="menu">
+
+    <div class="listing-c" style="font-family: 'Merienda', cursive;" onclick="visitWebsite1()">Home</div>
+    <div class="listing-b" style="font-family: 'Merienda', cursive;">Central<i class="fas fa-plus"></i></div>
+
+    <div class="listing-a">
+      <ul>
+      <li><a href="http://temple-in-pray.com/about" style="font-family: 'Merienda', cursive;">About</a></li>
+      <li><a href="http://temple-in-pray.com/chatbox" style="font-family: 'Merienda', cursive;">ChatBOX</a></li>
+      <li><a href="http://temple-in-pray.com/blog" style="font-family: 'Merienda', cursive;">Blog</a></li>
+      <li><a href="http://temple-in-pray.com/community-mailbox" style="font-family: 'Merienda', cursive;">Public MailBox</a></li>
+      <li><a href="http://temple-in-pray.com/FAQ" style="font-family: 'Merienda', cursive;">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="listing-b" style="font-family: 'Merienda', cursive;">Tools<i class="fas fa-plus"></i></div>
+
+    <div class="listing-a"> 
+     <ul> 
+      <li><a href="http://temple-in-pray.com/prayer-farm" style="font-family: 'Merienda', cursive;">Prayer Farm</a></li>
+      <li><a href="http://temple-in-pray.com/daily-luckdraw" style="font-family: 'Merienda', cursive;">Daily Luckydraw</a></li>
+      <li><a href="http://temple-in-pray.com/archery-field" style="font-family: 'Merienda', cursive;">Archery Field</a></li>
+      <li><a href="http://temple-in-pray.com/daily-stamp" style="font-family: 'Merienda', cursive;">Daily Stamp</a></li>
+      <li><a href="http://temple-in-pray.com/bookshelf" style="font-family: 'Merienda', cursive;">BOOKself</a></li>
+     </ul>
+    </div>
+    <div class="listing-c" style="font-family: 'Merienda', cursive; border-bottom: #e9e9e9 1px solid;" onclick="visitWebsite2()">Contact</div>
+    <div class="dimmer"></div>
+  </div>
+</div>
+
+
+
+<body>
+
+  
+  <div class="fixed-blank"></div> 
+  
+
+  <script src="https://www.anthonycarbon.com/wp-includes/js/jquery/jquery.js" type="text/javascript"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css" rel="stylesheet" type="text/css" media="all" />
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+
+
+      <div class="container">
+        <h6>
+          <a style="font-family: 'Kalam', cursive;">Pray for</a>&nbsp;<span class="typewriter thick" style="text-decoration: underline; color: black; font-family: 'Courgette', cursive;"></span>
+        </h6>
+      </div>
+
+      <div class="main">
+       <h4>
+        <a style="color: #000050; font-family: 'Titan One', cursive; font-weight: 100;">Here is</a> 
+        <b class="titl1" style="color: #AED6F1;font-weight: 100; font-family: 'Permanent Marker', cursive;">Prayer Farm</b>
+       </h4>
+       <h3 style="font-weight: 200;">A tool which able to generate prayer<br><a style="font-family: 'Noto Sans HK', sans-serif;">click the below button and enjoy it</a></h3>
+       <button class="farm-enter"  onclick="visitWebsite3()"> try it </button>
+      </div>
+      <div class="blank-00"></div>      
+      <div class="blank-11"></div>
+      <div class="blank-22"></div>
+      <div class="blank-33"></div>
+      <div class="blank-44"></div>
+      <div class="blank-55"></div>
+      <div class="blank-66"></div>
+      <div class="blank-77"></div>
+      <div class="blank-88"></div>
+      <div class="blank-99"></div>
+      
+      <div class="blank-011"></div>
+      <div class="blank-022"></div>
+      <div class="blank-033"></div>
+      <div class="blank-044"></div>
+      <div class="blank-055"></div>
+      <div class="blank-066"></div>
+      <div class="blank-077"></div>
+      <div class="blank-088"></div>
+      <div class="blank-099"></div>
+
+      <div class="image-descr-mob">
+        
+        <b style="font-size: 2.5rem; margin-bottom: 3rem;">How to use it?</b>
+        <div class="image-3"></div> 
+
+        <div class="st-image" style="margin-left: 1%; border-left: 4px solid red ;">
+         <p>1. </p><a> Choose your preferred prayer generation type. This website can help you make a decision by automatically selecting an AI model. <br> (please note that some prayer types may overlap, just choose one of it.)</a>
+        </div>
+        <div class="nd-image" style=" margin-left: 1%; border-left: 4px solid green  ;">
+         <p>2. </p><a> Please provide the details of your prayer, including the name, the reason for your prayer, and the main message or intention that you want to convey to god.</a>
+        </div>
+        <div class="rd-image" style=" margin-left: 1%; border-left: 4px solid blue;">
+         <p>3. </p><a> Your prayer will be generated successfully and read out automatically. Close your eyes, open your ears and heart, and enjoy every moment. <br> The prayer will be recieved by jesus.</a>
+        </div>
+      </div>
+    </div>
+
+
+
+      <div class="image-descr">
+
+
+        <b style="font-size: 2.5rem; margin-bottom: 3rem;">How to use it?</b>
+
+
+
+        <div class="st-image">
+          <div class="image-1"></div> <p>1. </p><a>Here is a prayer generator. Choose your preferred prayer generation type. <br> This website can help you make a decision by automatically selecting an AI model. <br> (please note that some prayer types may overlap, just choose one of it.)</a>
+        </div>
+        <div class="nd-image">
+          <p>2. </p><a> Please provide the details of your prayer,<br> including the name, the reason for your prayer, <br> and the main message or intention that you want to convey to god.</a> <div class="image-2"></div> 
+        </div>
+        <div class="rd-image">
+          <div class="image-3"></div> <p>3. </p><a> Your prayer will be generated successfully and read out automatically. <br> Close your eyes, open your ears and heart, and enjoy every moment. <br> The prayer will be recieved by jesus.</a>
+        </div>
+      </div>
+    </div>
+ 
+    
+      <!--formal-font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+      <div class="blank-111"></div>
+      <div class="blank-222"></div>
+      <div class="blank-333"></div>
+      <div class="blank-444"></div>
+      <div class="blank-555"></div>
+
+      <div class="seek-for-help">
+        <div class="head-titl2"> Seek for help?</div> 
+      
+        <div class="seek-p" style="font-weight: 300; font-size: 17px; padding-left: 30px; font-family: 'Noto Sans HK'; margin-bottom: 5rem;"><p>
+          <br>You may find some answer from the article <a href="">What is the Prayer Farm</a>, or some supplementary information in the <a href="http://temple-in-pray.com/about">About page</a>.<br>
+          <br> Some common questions is put in the <a href="http://temple-in-pray.com/FAQ">FAQ page</a>, you may find the answer there.</p></div>
+        </div> 
+  
+  
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://use.fontawesome.com/d5579f313c.js"></script>
+      <footer>
+          <div class="icons">
+              <div class="social">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-reddit"></i>
+              </div>
+          <div class="language">
+            <ul>
+              <i class="fa-solid fa-globe"></i><a href="http://temple-in-pray.com" style="font-weight: 200;">English </a><a href="#"> ...</a>
+              </ul>
+            </div>
+                <div class="copyright">
+                    <p style="font-weight: 200;">&copy;2023 temple-in-pray.com, all right reserved</p>
+                </div>
+                <a  class="terms" href="http://temple-in-pray.com/policies">Terms & Policies</a>
+            </div>
+        </footer>
+      </footer>
+
+<style>
+
+:root {
+  --color-primary: hsl(36, 100%, 50%);
+  --color-white: #e9e9e9;
+  --color-black: transparent;
+  --color-black-1: #212b38;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo {
+  color: var(--color-white);
+  font-size: 48px;
+}
+.logo span {
+  color: var(--color-primary);
+}
+.menu-bar{
+  background: var(--color-black);
+  height: 95px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+  z-index: 9999;
+}
+.menu-bar.fixed{
+  background: linear-gradient(to right, rgba(100, 65, 225, 0.95)  ,rgba(34, 34, 248, 0.85) ,rgba(100, 65, 225, 0.75) ,rgba(100, 65, 225, 0.85)  );
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+}
+.menu-bar .th ul {
+  list-style: none;
+  display: flex;
+  position: right;
+}
+.menu-bar .th ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+.menu-bar .th ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: black;
+  font-family: none;
+}
+.menu-bar .th a:hover {
+  color: orange;
+}
+.menu-bar .th ul li b {
+  position: right;
+  float: right;
+  font-size: 24px;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: var(--color-white);
+  font-weight: 100;
+}
+.menu-bar .th ul li b:hover {
+  color: orange;
+}
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+  background: rgba(255,255,255,.68);
+}
+.menu-bar .th ul li:hover .dropdown-menu {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  color: var(--color-white);
+  z-index: 10;
+}
+.menu-bar .th ul li:hover .dropdown-menu ul {
+  display: block;
+  width: max-content;
+}
+.menu-bar .th ul li:hover .dropdown-menu ul li {
+  padding: 10px;
+}
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: inline-block;
+  position: absolute;
+  border: 2px solid transparent;
+  left: 100%;
+  top: 0;
+  background: rgba(255,255,255,.68);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+
+
+
+
+body{ 
+    background: linear-gradient(35deg,#f55555 ,#f09955 ,#f8f888 ,#59f59f ,#6ce461 ,#a7e461 ,#d883fa ,#c169fc ,#6441e1 ,#2222f8 ,#210099 ,#00008B);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.menu{
+  display: none;
+}
+
+.dimmer{
+  display: none;
+}
+
+.container{
+  padding-left: 10rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+h6 {
+  font-size: 2rem;
+  color: black;
+  text-align: left;
+  font-weight: 700;
+  margin: 1rem 0 1rem 2rem;
+}
+
+h6 a{
+  color: #c0c0c0;
+}
+
+@keyframes typing {
+
+   0.0000%, 24.0000% { content: ""; }
+   1.2500%, 23.7000% { content: "f"; }
+   2.2916%, 22.9900% { content: "fr"; }
+   3.5416%, 22.1100% { content: "fri"; }
+   4.7912%, 21.5300% { content: "frie"; }
+   6.0408%, 20.8700% { content: "frien"; }
+   7.2904%, 19.0000% { content: "friend"; }
+   8.5400%, 18.1100% { content: "friends"; }
+   9.7416%, 17.2100% { content: "friendsh"; }
+  10.9416%, 16.4400% { content: "friendshi"; }
+  12.1900%, 15.1900% { content: "friendship"; }
+  13.4400%, 14.0000% { content: "friendship?"; }
+
+  24.0000%, 39.0000% { content: ""; }
+  25.7000%, 38.9000% { content: "d"; }
+  26.9000%, 38.0000% { content: "dr"; }
+  28.0000%, 37.2000% { content: "dre"; }
+  29.1000%, 36.3000% { content: "drea"; }
+  30.1000%, 35.5000% { content: "dream"; }
+  31.0000%, 34.7000% { content: "dreams"; }
+  32.1000%, 33.7000% { content: "dreams?"; }
+
+  40.0000%, 65.3000% { content: ""; }
+  41.2000%, 64.3000% { content: "t"; }
+  42.3000%, 63.4000% { content: "th"; }
+  43.4000%, 62.6000% { content: "tha"; }
+  44.5000%, 62.0000% { content: "than"; }
+  45.6000%, 61.2000% { content: "thank"; }
+  46.7000%, 60.5000% { content: "thankg"; }
+  47.8000%, 59.7000% { content: "thankgi"; }
+  48.9000%, 58.9000% { content: "thankgiv"; }
+  50.0000%, 58.0000% { content: "thankgivi"; }
+  51.1000%, 57.2000% { content: "thankgivin"; }
+  52.2000%, 56.3000% { content: "thankgiving"; }
+  53.3000%, 55.5000% { content: "thankgiving?"; }
+
+  66.0000%, 84.2000% { content: ""; }
+  67.1000%, 83.7000% { content: "t"; }
+  68.2000%, 83.2000% { content: "th"; }
+  69.3000%, 82.8000% { content: "the"; }
+  70.4000%, 82.3000% { content: "the "; }
+  71.4500%, 81.7000% { content: "the w"; }
+  72.4000%, 81.1000% { content: "the wo"; }
+  73.4000%, 80.5000% { content: "the wor"; }
+  74.3500%, 79.6000% { content: "the worl"; }
+  75.3000%, 79.0000% { content: "the world"; }
+  76.3000%, 78.1000% { content: "the world?"; }
+
+  85.0000%, 98.0000% { content: ""; }
+  85.5000%, 97.3000% { content: "a"; }
+  85.9000%, 96.5000% { content: "a "; }
+  86.4000%, 95.7500% { content: "a h"; }
+  86.9000%, 95.0000% { content: "a ho"; }
+  87.4000%, 94.4000% { content: "a hop"; }
+  87.9000%, 93.8000% { content: "a hope"; }
+  88.5000%, 92.0000% { content: "a hope?"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 25s infinite;
+}
+
+
+
+.typewriter.thick::after {
+  color: #778899;
+  content: "";
+  border-right: 0.75ch solid var(--caret);
+  animation: blink 0.75s linear infinite;
+}
+
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "friendship?"; }
+    25% { content: "dreams?"; }
+    40% { content: "thankgiving?"; }
+    65% { content: "the earth?"; }
+    85% { content: "a hope?"; }
+  }
+
+  .typewriter::before {
+    content: "friendship?";
+    animation: sequencePopup 49s linear infinite;
+  }
+}
+
+
+
+h2{
+  font-size: 35px;
+  font-family: fantasy;
+  font-variant-position: center;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+}
+
+.main{
+  min-height: 500px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+
+.fixed-blank{
+  height: 0;
+  top: 0;
+  display: block;
+  position: relative;
+}
+
+.fixed-blank.fixed{
+  height: 95px;
+}
+
+h4{
+  align-self: center;
+}
+
+
+.titl1 .letter {
+  display: inline-block;
+  position: relative;
+  line-height: 1em;
+  z-index: 0;
+}
+
+
+
+
+
+.image-descr{
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.image-descr b{
+  margin-left: 2.1rem;
+}
+
+
+.image-descr-mob{
+  display: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.st-image{
+  display: flex;
+}
+
+.st-image p{
+  margin-right: 2%;
+  line-height: 2.4px;
+  font-size: 900;
+  font-size: 1.25rem;
+}
+
+.st-image a, .st-image p, .nd-image a, .nd-image p, .rd-image a, .rd-image p{
+  font-weight: 400;
+  margin-top: 8%;
+  margin-left: 1%;
+}
+
+.st-image a, .nd-image a, .rd-image a{
+  font-size: 1rem;
+}
+
+
+.nd-image{
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+}
+
+.nd-image p{
+  margin-left: 4%;
+  line-height: 2px;
+  font-size: 1.5rem;
+  margin-right: 2%;
+}
+
+.nd-image a{
+  margin-left: 4%;
+}
+
+
+
+.rd-image{
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.rd-image p{
+  margin-right: 2%;
+  line-height: 2px;
+  font-size: 1.75rem;
+}
+
+
+.image-1{
+  display: grid;
+  background-image: url(A\ sea\ of\ people.png);
+  background-size: cover;
+  width: 25%;
+  padding-bottom: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: center;
+  border-radius: 4px;
+}
+
+.image-2{
+  display: right;
+  background-image: url(A\ crowd\ of\ people.png);
+  background-size: cover;
+  width: 25%;
+  padding-bottom: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-self: right;
+  border-radius: 4px;
+}
+
+
+.image-3{
+  display: grid;
+  background-image: url(Prayer-end.jpg);
+  background-size: cover;
+  width: 25%;
+  padding-bottom: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: center;
+  border-radius: 4px;
+}
+
+
+.farm-enter{
+  padding: 8px 20px;
+  border-radius: 45px;
+  border: 1px solid #FADBD8;
+  background: transparent;
+  display: inline-block;
+  color: #e9e9e9;
+  font-family:Arial;
+	font-size: 15px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+  box-shadow: 0px 10px 14px -7px hsl(189, 49%, 30%);
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+
+}
+
+.farm-enter:hover{
+  color: white;
+	background:linear-gradient(to right,goldenrod , goldenrod, yellow, white);
+  -webkit-box-shadow: 0px 0px 13px 2px rgba(233,233,233,0.8);
+  -moz-box-shadow: 0px 0px 13px 2px rgba(233,233,233,0.8);
+  box-shadow: 0px 0px 13px 2px rgba(233,233,233,0.8);
+}
+
+
+h3{
+  padding: 40px;
+  font-size: 18px;
+}
+
+h3 a{
+  font-size: 15px;
+}
+
+.blank-00{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.01);
+}
+.blank-11{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.blank-22{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.blank-33{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.blank-44{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.11);
+}
+.blank-55{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.14);
+}
+.blank-66{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.17);
+}
+.blank-77{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.20);
+}
+.blank-88{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.23);
+}
+.blank-99{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.26);
+}
+
+.blank-011{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.29);
+}
+
+.blank-022{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.32);
+}
+.blank-033{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+.blank-044{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.38);
+}
+.blank-055{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.41);
+}
+.blank-066{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.44);
+}
+.blank-077{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.47);
+}
+.blank-088{
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.blank-111{
+  width: 100%;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.48);
+}
+
+.blank-222{
+  width: 100%;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+.blank-333{
+  width: 100%;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.42);
+}
+.blank-444{
+  width: 100%;
+  height: 11px;
+  background-color: rgba(255, 255, 255, 0.38);
+}
+.blank-555{
+  width: 100%;
+  height: 11px;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.seek-for-help{
+  font-weight: 700; 
+  font-size: 38px; 
+  font-family: 'Noto Sans HK', serif;
+  height: 100%;
+  background-color :rgba(255, 255, 255, 0.32);
+  padding-left: 45px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 100px;
+}
+
+.seek-p{
+  font-size: 17px;
+}
+
+
+
+
+
+footer{
+  background-color: #212b38;
+  padding: 3rem 0;
+  padding-bottom: 0;
+  max-height: 700px;
+}
+
+.icons{
+    display: block;
+    text-align: center;
+}
+
+.icons .social i{
+    font-size: 2rem;
+    color: grey;
+    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transition: all 0.3s ease;
+}
+
+.icons .social i:hover{
+    color:#e9e9e9;
+    cursor: pointer;
+}
+
+.language{
+  display:none;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.language a, .seek-p a{
+  text-decoration: underline;
+  color: #1a73e8;
+}
+
+.language a:hover, .seek-p a:hover{
+  text-decoration: none;
+}
+
+.terms{
+  font-size: 13px;
+  color: #cdcdcd;
+  text-decoration: underline;
+  font-weight: 100;
+  font-family: 'Noto Sans HK'
+}
+.terms:hover{
+  text-decoration: none;
+}
+
+.icons .copyright p{
+    font-size: 1.2rem;
+    color: #e9e9e9;
+    margin-left: 1.5rem 0;
+}
+
+.icons{
+  display: flexbox;
+}
+
+@media (max-width:850px){
+    .menu-bar .th ul li b {
+      font-size: 21px;
+    }
+    .content{
+      width: 700px
+    }
+}
+@media (max-width:890px){
+    .content{
+      width: 740px
+    }
+}
+@media (max-width:945px){
+    .content{
+      width: 780px
+    }
+}
+@media (min-width:980px){
+    h6{
+      font-size: 2.5rem;
+    }
+    .logo{
+      font-size: 3rem;
+    }
+    .content{
+      width: 830px
+    }
+}
+@media (max-width:1020px){
+    .content{
+      width: 870px
+    }
+    .image-performer{
+      padding-left: 25%;
+    }
+}
+@media (min-width:1400px){
+    h4{
+     font-size: 3.2rem;
+    }
+    h3{
+      padding: 4rem;
+    }
+}
+@media (min-width:720px) and (max-width:1400px) {
+    h4{
+      font-size: 2.8rem;
+    }
+    h3{
+      padding: 3.2rem;
+    }
+  }
+
+
+
+
+@media (min-width:500px) and (max-width: 720px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .container{
+    padding-left: 10px;
+  }
+  .menu-bar .th ul {
+    font-size: 18px;
+  }
+  h4{
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width:870px) and (max-width: 1100px){
+.st-image a, .nd-image a, .rd-image a,.st-image p, .nd-image p, .rd-image p{
+  margin-top: 6%;
+}
+.st-image a, .nd-image a, .rd-image a{
+  font-size: 0.96rem;
+} 
+.image-1, .image-2, .image-3{
+  width: 30%;
+}
+}
+
+@media (min-width:720px) and (max-width: 870px){
+.st-image a, .nd-image a, .rd-image a,.st-image p, .nd-image p, .rd-image p{
+  margin-top: 6%;
+}
+.st-image a, .nd-image a, .rd-image a{
+  font-size: 0.90rem;
+} 
+.image-1, .image-2, .image-3{
+  width: 35%;
+}
+}
+
+@media (min-width:675px) and (max-width: 720px){ 
+.st-image a, .nd-image a, .rd-image a,.st-image p, .nd-image p, .rd-image p{
+  margin-top: 5%;
+} 
+.st-image a, .nd-image a, .rd-image a{
+  font-size: 0.85rem;
+} 
+.image-1, .image-2, .image-3{
+  width: 40%;
+}
+}
+
+
+@media (max-width: 675px) {
+.image-descr{
+  display: none;
+}
+
+.image-descr-mob{
+  display: grid;
+  align-items: center;
+  text-align: left;
+}
+
+.image-descr-mob b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-3{
+  width: 75%;
+  padding-bottom: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-bottom: 15%;
+}
+
+.st-image p, .st-image a{
+  margin-top: 2.5rem;
+}
+
+.st-image p, .nd-image p, .rd-image p{
+  margin-left: 1%;
+  margin-right: 2%;
+  margin-bottom: 2rem;
+}
+
+.st-image a, .nd-image a, .rd-image a{
+  margin-bottom: 2rem;
+  margin-left: 4%;
+  margin-right: 5%;
+}
+
+.seek-for-help{
+  font-size: 32px;
+  padding-left: 30px;
+}
+
+.seek-p{
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.th{
+  display: none;
+}
+
+.menu{
+  margin: 0;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, rgba(100, 65, 225, 1) , rgba(34, 34, 222, 0.9), rgba(33, 0, 153, 1));
+  background-size: cover;
+  z-index: 7;
+  position: fixed;
+  top: -200%;
+  display: inline-block;
+  transition: all 1.5s ease-in-out,
+              opacity 1s ease-in-out;           
+  opacity: 0;
+}
+
+.dimmer{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-size: cover;
+  z-index: 7;
+  position: fixed;
+  top: -200%;
+  display: block;
+  opacity: 0;
+  transition: all 1.5s ease-in-out,
+              opacity 1s ease-in-out; 
+}
+
+.menu.open{
+  transition: all 0.5s ease-in-out,
+              opacity 1s ease-in-out;
+  top: 95px;
+  opacity: 1;
+  align-items: center;
+  background-size: cover;
+  z-index: 7;
+  display: block;
+  position: fixed;
+}
+
+.dimmer.open{
+  transition: all 0.5s ease-in-out,
+              opacity 1s ease-in-out;
+  top: auto;
+  left: 0;
+  z-index: 7;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-size: cover;
+}
+
+
+.menu ul{
+  margin: 0;
+  padding: 0; 
+}
+
+.menu ul li{
+  margin: 20px;
+  text-align: center;
+}
+
+.menuToggle span{
+  display: block;
+  height: 4px;
+  top: 16px;
+  right: 9px; 
+  margin-bottom: 5px;
+  position: relative;
+  background: #e9e9e9;
+  border-radius: 4px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),  
+              opacity 0.55s ease;
+}
+
+
+
+.menuToggle span.mt1{
+  width: 29px;
+  display: block;
+  transform-origin: 0% 0%;
+}
+.menuToggle span.mt2{
+  display: block;
+  width: 24px;
+}
+.menuToggle span.mt3{
+  width: 29px;
+  display: block;
+  transform-origin: 0% 100%;
+}
+
+
+
+.menuToggle span.clicked.mt1{
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: goldenrod;
+}
+
+.menuToggle span.clicked.mt2{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.menuToggle span.clicked.mt3{
+  transform: rotate(-45deg) translate(0, -1px);
+  background: goldenrod;
+}
+
+
+
+.language{
+  text-align: center;
+  display: flex; 
+  margin: 29px;
+}
+.language i{
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #e9e9e9;
+  size: 300%;
+  font-size: 22px;
+}
+.language a{
+  padding: 29px;
+}
+
+.listing-b, .listing-c{
+    font-size: 1.24rem;
+    padding: 15px;
+    border: 1px solid #e9e9e9;
+    position: relative;
+    color: #e9e9e9;
+    border-bottom: 0;
+    cursor: pointer;
+}
+.listing-a {
+    display: none;
+    padding: 20px;
+    border: 1px solid #e9e9e9;
+    color: aliceblue;
+    border-bottom: 0;
+    position: relative;
+}
+
+.listing-a li{
+  list-style: none;
+}
+
+
+.listing-a li a{
+  display: block;
+  position: relative;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  line-height: 6px;
+}
+
+.listing-a li a:hover{
+  color: orangered;
+  transform: translateY(-5px);
+}
+
+.listing-b i {
+    position: absolute;
+    right: 10px;
+    top: 24%;
+}
+}
+
+@media (max-width: 680px) {
+  .icons .copyright p{
+    font-size: 1rem;
+  }
+  .terms{
+    font-size: 11px;
+    color: #cdcdcd;
+    text-decoration: underline;
+    font-weight: 100;
+    font-family: 'Noto Sans HK';
+  }
+  .terms:hover{
+    text-decoration: none;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+footer{
+  width: 100%;
+}
+p{
+  font-size: 95%;
+}
+h6{
+  font-size: 22px;
+}
+.icons .social i{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.copyright p{
+  margin-bottom: 0rem;
+}
+h4{
+  font-size: 1.8rem;
+}
+}
+@media (max-width: 450px) {
+footer{
+  width: 100%;
+}
+.icons .social i{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.icons .copyright p{
+  font-size: 0.9rem;
+  }
+.terms{
+  font-size: 9px;
+  color: #cdcdcd;
+  text-decoration: underline;
+  font-weight: 100;
+  font-family: 'Noto Sans HK';
+}
+.terms:hover{
+  text-decoration: none;
+}
+h3{
+  font-size: 12px;
+}
+h3 a{
+  font-size: 10px;
+}
+}
+@media (max-width: 380px) {
+footer{
+  width: 100%;
+}
+.container{
+  padding: none;
+}
+p{
+  font-size: 90%;
+}
+.icons .social i{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.language{
+  padding-left: 0rem;
+}
+}
+
+@media (max-width: 300px) {
+footer{
+  width: 100%;
+}
+}
+
+@media (max-width: 250px) {
+footer{
+  width: 120%;
+}
+}
+@media (max-width: 643px) {
+    h6{
+      font-size: 25px;
+    }
+    h3{
+      font-size: 15px;
+    }
+    h3 a{
+      font-size: 12px;
+    }
+    .container{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+@media (min-width: 675px) and (max-width: 870px) {
+    .logo{
+    font-size: 32px;
+    }
+}
+
+
+
+</style>
+
+
+
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+
+
+function visitWebsite() {
+  window.location.href="http://temple-in-pray.com/prayer-farm"
+}
+
+function visitWebsite1() {
+  window.location.href="http://temple-in-pray.com"
+}
+
+function visitWebsite2() {
+  window.location.href="http://temple-in-pray.com/contact"
+}
+
+function visitWebsite3() {
+  window.location.href="http://temple-in-pray.com/prayer-farm/choice"
+}
+
+window.addEventListener("scroll", function () {
+var menuBar = document.querySelector(".menu-bar");
+var main = document.querySelector(".fixed-blank");
+if (window.pageYOffset > menuBar.offsetTop) {
+  menuBar.classList.add("fixed");
+  main.classList.add("fixed");
+} else {
+  menuBar.classList.remove("fixed");
+  main.classList.remove("fixed");
+}
+});
+
+const mt1 = document.querySelector('.mt1');
+const mt2 = document.querySelector('.mt2');
+const mt3 = document.querySelector('.mt3');
+const menu = document.querySelector('.menu');
+const dim = document.querySelector('.dimmer')
+
+function toggleMenu(event) {
+mt1.classList.toggle('clicked');
+mt2.classList.toggle('clicked');
+mt3.classList.toggle('clicked');
+menu.classList.toggle('open');
+dim.classList.toggle('open')
+}
+
+mt1.addEventListener('click', toggleMenu);
+mt2.addEventListener('click', toggleMenu);
+mt3.addEventListener('click', toggleMenu);
+
+dim.addEventListener('click', close);
+function close(event) {
+mt1.classList.remove('clicked');
+mt2.classList.remove('clicked');
+mt3.classList.remove('clicked');
+menu.classList.remove('open');
+dim.classList.remove('open')
+}
+
+
+jQuery('.listing-b').click(function () {
+    jQuery(this).toggleClass('active');
+    var faqq = jQuery(this).next();
+    jQuery(faqq).slideToggle("slow", function () {
+    });
+});
+
+var textWrapper = document.querySelector('.titl1');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.titl1 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.titl1',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 212121
+  });
+
+</script>
+
+

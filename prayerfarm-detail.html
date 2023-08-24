@@ -1,0 +1,1063 @@
+<!--temple-in-pray-model4 v0.10(c)-->
+<!DOCTYPE html>
+<html>
+  <link rel="icon" href="icon.png">
+
+  <title>temple in pray</title>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <style>
+
+  
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9e9e9;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #e9e9e9;
+  border-top-color: navy;
+  border-radius: 50%;
+  animation: loading 1.25s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(2turn);
+  }
+}
+    </style>
+
+    <script>
+ window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    loader.parentNode.removeChild(loader);
+  });
+});
+    </script>
+  </head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+
+  <header>
+    <div class="loader"></div>       
+    <div class="menu-bar">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+      <h1 class="logo" style="font-family: 'Caveat', cursive;">Temple<span> in pray</span></h1>
+      <div class="th">
+      <ul>
+        <li class="th-item"><b href="http://temple-in-pray.com" style="font-family: 'Darumadrop One', cursive;">Home</b></li>
+        <li class="th-item"><b href="" style="font-family: 'Darumadrop One', cursive;">Central <i class="fas fa-caret-down"></i></b>
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="http://temple-in-pray.com/about" style="font-family: 'Merienda', cursive;">About</a></li>
+                  <li><a href="http://temple-in-pray.com/chatbox" style="font-family: 'Merienda', cursive;">ChatBOX</a></li>
+                  <li><a href="http://temple-in-pray.com/blog" style="font-family: 'Merienda', cursive;">Blog</a></li>
+                  <li>
+                    <a href="#" style="font-family: 'Merienda', cursive;">Language<i class="fas fa-caret-right"></i></a>
+                    
+                    <div class="dropdown-menu-1">
+                      <ul>
+                        <li><a href="http://temple-in-pray.com" style="font-family: 'Merienda', cursive;">English</a></li>
+                        <li><a href="#" style="font-family: 'Merienda', cursive;">Support English only</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="http://temple-in-pray.com/public-templemailbox" style="font-family: 'Merienda', cursive;">Public MailBox</a></li>
+                  <li><a href="http://temple-in-pray.com/FAQ" style="font-family: 'Merienda', cursive;">FAQ</a></li>
+                </ul>
+              </div>
+        </li>
+        <li class="th-item"><b href="#" style="font-family: 'Darumadrop One', cursive;">Tools <i class="fas fa-caret-down"><b></i>
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="http://temple-in-pray.com/prayer-farm" style="font-family: 'Merienda', cursive;">Prayer Farm</a></li>
+                  <li><a href="http://temple-in-pray.com/daily-luckdraw" style="font-family: 'Merienda', cursive;">Daily Luckydraw</a></li>
+                  <li><a href="http://temple-in-pray.com/archery-field" style="font-family: 'Merienda', cursive;">Archery Field</a></li>
+                  <li><a href="http://temple-in-pray.com/daily-stamp" style="font-family: 'Merienda', cursive;">Daily Stamp</a></li>
+                  <li><a href="http://temple-in-pray.com/bookshelf" style="font-family: 'Merienda', cursive;">BOOKself</a></li>
+                </ul>
+          </div>
+        </li>
+        <li class="th-item"><b href="http://temple-in-pray.com/contact-us" style="font-family: 'Darumadrop One', cursive;">Contact</b></li>
+      </ul>
+    </div>
+      <div class="menuToggle">
+          <span class="mt1"></span>
+          <span class="mt2"></span>
+          <span class="mt3"></span>
+      </div>
+
+      
+  </div>
+
+</div>
+</div>
+</div>  
+
+</header>
+
+
+<script src="https://www.anthonycarbon.com/wp-includes/js/jquery/jquery.js" type="text/javascript"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css" rel="stylesheet" type="text/css" media="all" />
+
+  <div class="menu">
+
+    <div class="listing-c" style="font-family: 'Merienda', cursive;" onclick="visitWebsite1()">Home</div>
+    <div class="listing-b" style="font-family: 'Merienda', cursive;">Central<i class="fas fa-plus"></i></div>
+
+    <div class="listing-a">
+      <ul>
+      <li><a href="http://temple-in-pray.com/about" style="font-family: 'Merienda', cursive;">About</a></li>
+      <li><a href="http://temple-in-pray.com/chatbox" style="font-family: 'Merienda', cursive;">ChatBOX</a></li>
+      <li><a href="http://temple-in-pray.com/blog" style="font-family: 'Merienda', cursive;">Blog</a></li>
+      <li><a href="http://temple-in-pray.com/public-templemailbox" style="font-family: 'Merienda', cursive;">Public MailBox</a></li>
+      <li><a href="http://temple-in-pray.com/FAQ" style="font-family: 'Merienda', cursive;">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="listing-b" style="font-family: 'Merienda', cursive;">Tools<i class="fas fa-plus"></i></div>
+
+    <div class="listing-a"> 
+     <ul> 
+      <li><a href="http://temple-in-pray.com/prayer-farm" style="font-family: 'Merienda', cursive;">Prayer Farm</a></li>
+      <li><a href="http://temple-in-pray.com/daily-luckdraw" style="font-family: 'Merienda', cursive;">Daily Luckydraw</a></li>
+      <li><a href="http://temple-in-pray.com/archery-field" style="font-family: 'Merienda', cursive;">Archery Field</a></li>
+      <li><a href="http://temple-in-pray.com/daily-stamp" style="font-family: 'Merienda', cursive;">Daily Stamp</a></li>
+      <li><a href="http://temple-in-pray.com/bookshelf" style="font-family: 'Merienda', cursive;">BOOKself</a></li>
+     </ul>
+    </div>
+    <div class="listing-c" style="font-family: 'Merienda', cursive;" onclick="visitWebsite2()">Contact</div>
+    <div class="dimmer"></div>
+  </div>
+</div>
+
+
+
+<body>
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+
+
+  <div class="fixed-blank"></div> 
+    <div class= "main">
+
+
+      <h2 style="font-family: 'Kanit', sans-serif;">Provide context: The detail of your prayer</h2>
+
+<form onsubmit={handleSubmit}></form>
+      <div class="tool">
+     <button type="button" id="back-btn" class="back-btn" onclick="visitWebsite3()"><i class="fa-solid fa-arrow-up-right-from-square fa-rotate-270"></i> <br> Back</button> 
+     <button type="button" id="delete-btn" class="delet"><i class="fa-solid fa-trash-can" id="trash-can"></i> <br> Delete</button>
+     <button type="button" id="undo-btn" class="undo"><i class="fa-solid fa-backward-step" id="backward"  style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.042;" ></i> <br> Undo</button>
+     <button type="button" id="redo-btn" class="redo"><i class="fa-solid fa-forward-step" id="forward"  style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.042;" ></i> <br> Redo</button>   
+     </div>
+      <div class="container">
+       <textarea placeholder="typing your target in this box" id="detail"
+        required class="detail" style="max-width: 750px;" cols="25"></textarea>
+       </div>
+    <button type="submit" style="padding: 5px 10px;"> Submit </button>
+
+     </div>
+
+      <!--formal font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+      <div class="seek-for-help">
+        <div class="head-titl2"> Seek for help?</div> 
+      
+        <div class="seek-p" style="font-weight: 300; font-size: 17px; padding-left: 30px; font-family: 'Noto Sans HK'; margin-bottom: 5rem;"><p>
+          <br>You may find some answer from the article <a href="">What is the Prayer Farm</a>, or some supplementary information in the <a href="http://temple-in-pray.com/about">About page</a>.<br>
+          <br> Some common questions is put in the <a href="http://temple-in-pray.com/FAQ">FAQ page</a>, you may find the answer there.</p></div>
+        </div> 
+  
+    
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://use.fontawesome.com/d5579f313c.js"></script>
+    <footer>
+      <div class="icons">
+          <div class="social">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-reddit"></i>
+          </div>
+      <div class="language">
+        <ul>
+        <i class="fa-solid fa-globe"></i><a href="http://temple-in-pray.com" style="font-weight: 200;">English </a><a href="#"> ...</a>
+        </ul>
+      </div>
+          <div class="copyright">
+              <p style="font-weight: 200;">&copy;2023 temple-in-pray.com, all right reserved</p>
+          </div>
+          <a  class="terms" href="http://temple-in-pray.com/policies">Terms & Policies</a>
+      </div>
+  </footer>
+
+<style>
+
+:root {
+  --color-primary: hsl(36, 100%, 50%);
+  --color-white: #e9e9e9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo {
+  color: var(--color-white);
+  font-size: 48px;
+}
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background: linear-gradient(35deg,#2222f8ce,#2222f8 ,#3333f5 ,#2222f8 ,#1919ff, #2222f8);
+  height: 95px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.menu-bar.fixed{
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+}
+.menu-bar .th ul {
+  list-style: none;
+  display: flex;
+  position: right;
+}
+.menu-bar .th ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+.menu-bar .th ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: black;
+  font-family: none;
+}
+.menu-bar .th a:hover {
+  color: orange;
+}
+.menu-bar .th ul li b {
+  position: right;
+  float: right;
+  font-size: 24px;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: var(--color-white);
+  font-weight: 100;
+}
+.menu-bar .th ul li b:hover {
+  color: orange;
+}
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.dropdown-menu {
+  display: none;
+  background: rgba(255,255,255,.68);
+}
+.menu-bar .th ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border-radius: 10px;
+  color: var(--color-white);
+  z-index: 10;
+}
+.menu-bar .th ul li:hover .dropdown-menu ul {
+  width: max-content;
+  display: block;
+}
+.menu-bar .th ul li:hover .dropdown-menu ul li {
+  padding: 10px;
+}
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: rgba(255,255,255,.68);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+
+
+.menu{
+  display: none;
+}
+
+.dimmer{
+  display: none;
+}
+
+
+
+
+body{ 
+    background:   linear-gradient(to bottom, rgb(240, 230, 211), white);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+   }
+
+
+
+.main{
+  height: 1000px;
+  background: linear-gradient(to bottom, #2222f8f3, wheat, rgb(243, 225, 179), rgb(240, 230, 199), rgb(240, 235, 211), white);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fixed-blank{
+  height: 0;
+  top: 0;
+  display: block;
+  position: relative;
+}
+
+.fixed-blank.fixed{
+  height: 95px;
+}
+
+.main h2{
+  padding-top: 7rem;
+  font-size: 24px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail{
+  display: grid;
+  width: 50%;
+  padding: 14px 12px;
+  border-radius: 6px;
+  border: 2.5px solid #ccc;
+  font-size: 24px;
+  box-shadow: inset 1px 2px 2px rgba(0,0,0,.075);
+  background: #f5f5f5;
+  color: #555;
+  font-size: var(--smal-font-size);
+  font-weight: var(--font-medium);
+  transition: all .4s;
+  margin-bottom: 0.25rem;
+  resize: none;
+  overflow: hidden;
+  height: 188px;
+  min-height: 250px;
+  font-family: Arial;
+  overflow-wrap: break-word;
+  font-variant-position: center;
+  outline: none;
+}
+
+
+.detail::placeholder{
+  color: #aaa;
+  font-weight: 200;
+}
+
+.detail:focus, .detail:valid {
+  border-color: #007fff;
+  box-shadow:  0 0 2px #2222f8f3,
+               0 -1px 4px #1a73e8,
+               0 -2px 7px #007fff;
+}
+
+
+
+.tool{
+  position: relative;
+  background: #e9e9e9;
+  text-align: right;
+  justify-content: space-between;
+  width: 50%;
+  border-radius: 5px;
+  border: 2.5px solid #ccc;
+  margin-top: 5rem;
+  margin-bottom: 0.25rem;
+  left: 25%;
+}
+
+.back-btn{ 
+  position: relative;
+  float: left;
+  margin-left: 10px;
+}
+
+
+.delet, .undo, .redo, .back-btn{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 1px 2px;
+}
+.delet{
+  margin-right: 7px;
+}
+.redo{
+  margin-right: 10px;
+}
+
+
+
+.seek-for-help{
+  font-weight: 700; 
+  font-size: 38px; 
+  font-family: 'Noto Sans HK', serif;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-left: 45px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 100px;
+}
+
+
+.seek-p{
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  background-color: #212b38;
+  padding: 3rem 0;
+  padding-bottom: 0;
+  max-height: 700px;
+}
+
+.icons{
+    display: block;
+    text-align: center;
+}
+
+.icons .social i{
+    font-size: 2rem;
+    color: grey;
+    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transition: all 0.3s ease;
+}
+
+.icons .social i:hover{
+    color:#e9e9e9;
+    cursor: pointer;
+}
+
+.language{
+  display:none;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.language a  .seek-p a{
+  color: #1a73e8;
+  text-decoration: underline;
+}
+
+.language a:hover, .seek-p a:hover{
+  text-decoration: none;
+}
+
+.terms{
+  font-size: 13px;
+  color: #cdcdcd;
+  text-decoration: underline;
+  font-weight: 100;
+  font-family: 'Noto Sans HK'
+}
+.terms:hover{
+  text-decoration: none;
+}
+
+.icons .copyright p{
+    font-size: 1.2rem;
+    color: #e9e9e9;
+    margin-left: 1.5rem 0;
+}
+
+.icons{
+  display: flexbox;
+}
+
+@media (max-width:850px){
+    .menu-bar .th ul li b {
+      font-size: 21px;
+    }
+  }
+
+
+@media (max-width: 720px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .main{
+    padding-left: 10px;
+  }
+  .menu-bar .th ul {
+    font-size: 18px;
+  }
+  .main h2{
+    font-size: 21px;
+  }
+  .detail{
+    width: 75%;
+  }
+}
+
+
+@media (max-width: 675px) {
+.th{
+  display: none;
+}
+.menu{
+  margin: 0;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, #2222f8f3, wheat);
+  background-size: cover;
+  z-index: 7;
+  position: fixed;
+  top: -200%;
+  display: inline-block;
+  transition: all 1.5s ease-in-out,
+              opacity 1s ease-in-out;           
+  opacity: 0;
+}
+
+.dimmer{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-size: cover;
+  z-index: 7;
+  position: fixed;
+  top: -200%;
+  display: block;
+  opacity: 0;
+  transition: all 1.5s ease-in-out,
+              opacity 1s ease-in-out; 
+}
+
+.menu.open{
+  transition: all 0.5s ease-in-out,
+              opacity 1s ease-in-out;
+  top: 90px;
+  opacity: 1;
+  align-items: center;
+  background: linear-gradient(to bottom, #2222f8f3, wheat) ;
+  background-size: cover;
+  z-index: 7;
+  display: block;
+  position: fixed;
+}
+
+.dimmer.open{
+  transition: all 0.5s ease-in-out,
+              opacity 1s ease-in-out;
+  top: auto;
+  left: 0;
+  z-index: 7;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-size: cover;
+}
+
+.menu ul{
+  margin: 0;
+  padding: 0; 
+}
+
+.menu ul li{
+  margin: 20px;
+  text-align: center;
+}
+
+.menuToggle span{
+  display: block;
+  height: 4px;
+  top: 16px;
+  right: 9px; 
+  margin-bottom: 5px;
+  position: relative;
+  background: #e9e9e9;
+  border-radius: 4px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),  
+              opacity 0.55s ease;
+}
+
+
+
+.menuToggle span.mt1{
+  width: 29px;
+  display: block;
+  transform-origin: 0% 0%;
+}
+.menuToggle span.mt2{
+  display: block;
+  width: 24px;
+}
+.menuToggle span.mt3{
+  width: 29px;
+  display: block;
+  transform-origin: 0% 100%;
+}
+
+
+
+.menuToggle span.clicked.mt1{
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: goldenrod;
+}
+
+.menuToggle span.clicked.mt2{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.menuToggle span.clicked.mt3{
+  transform: rotate(-45deg) translate(0, -1px);
+  background: goldenrod;
+}
+
+
+
+
+
+.language{
+  text-align: center;
+  display: flex; 
+  margin: 29px;
+}
+.language i{
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #e9e9e9;
+  size: 300%;
+  font-size: 22px;
+}
+.language a{
+  padding: 29px;
+}
+
+.listing-b, .listing-c{
+    font-size: 1.5rem;
+    padding: 15px;
+    border: 1px solid #e9e9e9;
+    position: relative;
+    color: #e9e9e9;
+    border-bottom: 0;
+    cursor: pointer;
+}
+.listing-a {
+    display: none;
+    padding: 20px;
+    border: 1px solid #e9e9e9;
+    color: aliceblue;
+    border-bottom: 0;
+    position: relative;
+}
+
+.listing-a li{
+  list-style: none;
+}
+
+
+.listing-a li a{
+  display: block;
+  position: relative;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  line-height: 6px;
+}
+
+.listing-a li a:hover{
+  color: orangered;
+  transform: translateY(-5px);
+}
+
+.listing-b i {
+    position: absolute;
+    right: 10px;
+    top: 24%;
+}
+
+.seek-for-help{
+  font-size: 32px;
+  padding-left: 30px;
+}
+.seek-p{
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+}
+
+
+@media (max-width: 680px) {
+.tool{
+  left: 14%;
+  width: 72%;
+}  
+.icons .copyright p{
+  font-size: 1rem;
+}
+.terms{
+  font-size: 11px;
+  color: #cdcdcd;
+  text-decoration: underline;
+  font-weight: 100;
+  font-family: 'Noto Sans HK';
+}
+.terms:hover{
+  text-decoration: none;
+}
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+  footer{
+    width: 100%;
+  }
+  p{
+    font-size: 95%; 
+  }
+  .icons .social i{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .copyright p{
+    margin-bottom: 0rem;
+  }
+  .icons .copyright p{
+    font-size: 0.95rem;
+  }
+  .main h2{
+    font-size: 21px;
+  }
+  
+  .detail{
+    width: 80%;
+    min-height: 250px;
+    max-height: 350px;
+  }
+}
+@media (max-width: 450px) {
+  footer{
+    width: 100%;
+  }
+  .icons .social i{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .main h2{
+    font-size: 17px;
+  }
+  .icons .copyright p{
+    font-size: 0.9rem;
+  }
+  .terms{
+    font-size: 9px;
+    color: #cdcdcd;
+    text-decoration: underline;
+    font-weight: 100;
+    font-family: 'Noto Sans HK';
+  }
+  .terms:hover{
+    text-decoration: none;
+  }
+}
+@media (max-width: 380px) {
+footer{
+  width: 100%;
+}
+.main{
+  padding: none;
+}
+p{
+  font-size: 90%;
+}
+.icons .social i{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.language{
+ padding-left: 0rem;
+}
+.detail{
+  width: 85%;
+}
+.tool{
+  left: 14%;
+  width: 72%;
+}  
+}
+
+@media (max-width: 300px) {
+  footer{
+    width: 100%;
+  }
+}
+
+@media (max-width: 250px) {
+  footer{
+    width: 120%;
+  }  
+}
+@media (max-width: 643px) {
+  .main{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 870px) {
+  .logo{
+    font-size: 42px;
+  }
+}
+
+
+
+</style>
+
+
+
+</html>
+
+
+<script>
+
+
+function visitWebsite() {
+  window.location.href="http://temple-in-pray.com/prayer-farm"
+}
+
+function visitWebsite1() {
+  window.location.href="http://temple-in-pray.com"
+}
+
+function visitWebsite2() {
+  window.location.href="http://temple-in-pray.com/contact"
+}
+
+
+function visitWebsite3() {
+  window.location.href="http://temple-in-pray.com/prayer-farm/choice"
+}
+
+window.addEventListener("scroll", function () {
+var menuBar = document.querySelector(".menu-bar");
+var main = document.querySelector(".fixed-blank");
+if (window.pageYOffset > menuBar.offsetTop) {
+  menuBar.classList.add("fixed");
+  main.classList.add("fixed");
+} else {
+  menuBar.classList.remove("fixed");
+  main.classList.remove("fixed");
+}
+});
+
+const mt1 = document.querySelector('.mt1');
+const mt2 = document.querySelector('.mt2');
+const mt3 = document.querySelector('.mt3');
+const menu = document.querySelector('.menu');
+const dim = document.querySelector('.dimmer')
+
+function toggleMenu(event) {
+mt1.classList.toggle('clicked');
+mt2.classList.toggle('clicked');
+mt3.classList.toggle('clicked');
+menu.classList.toggle('open');
+dim.classList.toggle('open')
+}
+
+mt1.addEventListener('click', toggleMenu);
+mt2.addEventListener('click', toggleMenu);
+mt3.addEventListener('click', toggleMenu);
+
+dim.addEventListener('click', close);
+function close(event) {
+mt1.classList.remove('clicked');
+mt2.classList.remove('clicked');
+mt3.classList.remove('clicked');
+menu.classList.remove('open');
+dim.classList.remove('open')
+}
+
+jQuery('.listing-b').click(function () {
+    jQuery(this).toggleClass('active');
+    var faqq = jQuery(this).next();
+    jQuery(faqq).slideToggle("slow", function () {
+    });
+});
+
+
+const delet = document.getElementById('delete-btn');
+const trashCan = document.getElementById('trash-can');
+
+const undo = document.getElementById('undo-btn');
+const back = document.getElementById('backward');
+
+const redo = document.getElementById('redo-btn');
+const forward = document.getElementById('forward');
+
+delet.addEventListener('click', () => {
+  trashCan.classList.add('fa-bounce');
+  setTimeout(() => {
+    trashCan.classList.remove('fa-bounce')
+  }, 1000);
+ } );
+
+ undo.addEventListener('click', () => {
+  back.classList.add('fa-beat-fade');
+  setTimeout(() => {
+    back.classList.remove('fa-beat-fade')
+  }, 333);
+ } );
+
+ redo.addEventListener('click', () => {
+  forward.classList.add('fa-beat-fade');
+  setTimeout(() => {
+    forward.classList.remove('fa-beat-fade')
+  }, 333);
+ } );
+
+// Get the detail element
+const detailElem = document.getElementById('detail');
+
+// Keep track of the current and previous detail
+let currentdetail = detailElem.value;
+let previousdetail = null;
+
+// Keep track of the undo and redo stacks
+let undoStack = [];
+let redoStack = [];
+
+// Add event listeners for the delete, undo, and redo buttons
+document.getElementById('delete-btn').addEventListener('click', () => {
+  previousdetail = currentdetail;
+  currentdetail = '';
+  detailElem.value = '';
+  undoStack.push(previousdetail);
+  redoStack = [];
+});
+
+
+
+document.getElementById('undo-btn').addEventListener('click', () => {
+  if (undoStack.length > 0) {
+    redoStack.push(currentdetail);
+    currentdetail = undoStack.pop();
+    detailElem.value = currentdetail;
+  }
+});
+
+
+
+document.getElementById('redo-btn').addEventListener('click', () => {
+  if (redoStack.length > 0) {
+    undoStack.push(currentdetail);
+    currentdetail = redoStack.pop();
+    detailElem.value = currentdetail;
+  }
+});
+
+detailElem.addEventListener('input', () => {
+  if (currentdetail !== detailElem.value) {
+    previousdetail = currentdetail;
+    currentdetail = detailElem.value;
+    undoStack.push(previousdetail);
+    redoStack = [];
+  }
+});
+
+
+
+
+
+</script>
